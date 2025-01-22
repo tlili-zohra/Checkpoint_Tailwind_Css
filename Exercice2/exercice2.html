@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>online Blog</title>
+
+    <!--Css stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+    <!--CDN Tailwind css-->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!--1.Header Section-->
+    <header
+      class="bg-slate-50 shadow-xl text-white py-4 px-16 flex justify-between items-center fixed w-full"
+    >
+      <h1 class="flex gap-2 text-2xl font-bold text-blue-500">
+        <img src="lecriture.png" class="flex items-start w-8" alt="logo" />
+        On-Blog
+      </h1>
+      <nav class="flex space-x-6">
+        <a
+          href="#featured"
+          class="hover:text-purple-600 text-blue-500 font-semibold"
+          >Featured</a
+        >
+        <a
+          href="#categories"
+          class="hover:text-purple-600 text-blue-500 font-semibold"
+          >Categories</a
+        >
+
+        <a
+          href="#recent"
+          class="hover:text-purple-600 text-blue-500 font-semibold"
+          >Recent Posts</a
+        >
+      </nav>
+    </header>
+    <main>
+      <!--2.Featured Posts Section-->
+      <section id="featured" class="py-6 pt-32 bg-blue-100">
+        <div class="max-w-full mx-auto px-10 pb-20">
+          <h2 class="text-3xl font-bold text-center mb-8 text-blue-900">
+            Featured Posts
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- 1st Card -->
+            <div
+              class="bg-white shadow-lg rounded-lg overflow-hidden hover:animate-spin hover:translate-x-5 duration-150"
+            >
+              <img
+                src="2019_03_02_66706_1551461528._large.jpg"
+                alt="Featured Post 1"
+                class="w-full h-40 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold">Learn and Read</h3>
+                <p class="mt-2 text-gray-500">
+                  Discover new topics and enhance your knowledge with our
+                  curated resources.
+                </p>
+                <a href="#" class="text-blue-700">Learn more about..</a>
+              </div>
+            </div>
+            <!-- 2nd Card -->
+            <div
+              class="bg-white shadow-lg rounded-lg overflow-hidden hover:animate-spin hover:translate-x-5 duration-150"
+            >
+              <img
+                src="source-4280758_1920.jpg"
+                alt="Featured Post 2"
+                class="w-full h-40 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold">Programming</h3>
+                <p class="mt-2 text-gray-600">
+                  Stay updated on the latest programming trends, tips, and
+                  tutorials.
+                </p>
+                <a href="#" class="text-blue-700">Learn more about..</a>
+              </div>
+            </div>
+            <!-- 3rd Card -->
+            <div
+              class="bg-white shadow-lg rounded-lg overflow-hidden hover:animate-spin hover:translate-x-5 duration-150"
+            >
+              <img
+                src="pvfx_creativeportfolio_feat.jpg"
+                alt="Featured Post 3"
+                class="w-full h-40 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold">Portfolio</h3>
+                <p class="mt-2 text-gray-600">
+                  Showcase your projects, skills, and achievements in a
+                  professional portfolio.
+                </p>
+                <a href="#" class="text-blue-700">Learn more about..</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--3.Category Section:-->
+      <section id="categories" class="py-16 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center text-blue-900 mb-8">
+            Explore Categories
+          </h2>
+          <div class="flex flex-wrap justify-center gap-4 px-5 py-5">
+            <!-- Category 1 -->
+            <span
+              class="bg-blue-500 text-white px-6 py-4 rounded-full text-lg font-medium hover:bg-blue-600 cursor-pointer transition duration-300"
+            >
+              Technology
+            </span>
+            <!-- Category 2 -->
+            <span
+              class="bg-green-500 text-white px-6 py-4 rounded-full text-lg font-medium hover:bg-green-600 cursor-pointer transition duration-300"
+            >
+              Lifestyle
+            </span>
+            <!-- Category 3 -->
+            <span
+              class="bg-red-500 text-white px-6 py-4 rounded-full text-lg font-medium hover:bg-red-600 cursor-pointer transition duration-300"
+            >
+              Travel
+            </span>
+          </div>
+          <div class="flex flex-wrap justify-center gap-4">
+            <!-- Category 4 -->
+            <span
+              class="bg-purple-500 text-white px-6 py-4 rounded-full text-lg font-medium hover:bg-purple-600 cursor-pointer transition duration-300"
+            >
+              Health
+            </span>
+            <!-- Category 5 -->
+            <span
+              class="bg-yellow-500 text-white px-6 py-4 rounded-full text-lg font-medium hover:bg-yellow-600 cursor-pointer transition duration-300"
+            >
+              Education
+            </span>
+            <!-- Category 6 -->
+            <span
+              class="bg-pink-500 text-white px-6 py-4 rounded-full text-lg font-medium hover:bg-pink-600 cursor-pointer transition duration-300"
+            >
+              Fashion
+            </span>
+          </div>
+        </div>
+      </section>
+      <!--4.Recent Posts Section-->
+      <section id="recent" class="py-16 bg-blue-100">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center mb-8 text-blue-900">
+            Recent Posts
+          </h2>
+          <ul class="divide-y divide-blue-300">
+            <li
+              class="py-4 px-8 flex justify-between items-center hover:bg-slate-50 group"
+            >
+              <span class="text-lg font-semibold group-hover:text-blue-700"
+                >Algorithmes</span
+              >
+              <span class="text-gray-600 text-sm">January 20, 2025</span>
+            </li>
+            <li
+              class="py-4 px-8 flex justify-between items-center hover:bg-slate-50 group"
+            >
+              <span class="text-lg font-semibold group-hover:text-blue-700"
+                >Tailwind css</span
+              >
+              <span class="text-gray-600 text-sm">January 18, 2025</span>
+            </li>
+            <li
+              class="py-4 px-8 flex justify-between items-center hover:bg-slate-50 group"
+            >
+              <span class="text-lg font-semibold group-hover:text-blue-700"
+                >Bootstrap</span
+              >
+              <span class="text-gray-600 text-sm">January 1, 2025</span>
+            </li>
+            <li
+              class="py-4 px-8 flex justify-between items-center hover:bg-slate-50 group"
+            >
+              <span class="text-lg font-semibold group-hover:text-blue-700"
+                >First Portfolio</span
+              >
+              <span class="text-gray-600 text-sm">December 25, 2024</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--5.Newsletter Subscription Form-->
+      <section
+        id="newsletter"
+        class="py-32 bg-no-repeat bg-center text-white"
+        style="background-image: url('best-email-newsletter-tools.avif')"
+      >
+        <div class="bg-gray-500 bg-opacity-55 py-16 px-6">
+          <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-extrabold mb-6">Stay Updated!</h2>
+            <p class="text-lg mb-8">
+              Subscribe to our newsletter and never miss out on exciting updates
+              and insights.
+            </p>
+            <form class="flex flex-col sm:flex-row gap-4 justify-center">
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                class="text-black sm:w-auto px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 border border-gray-300"
+              />
+              <button
+                type="submit"
+                class="bg-yellow-500 text-white font-semibold px-4 py-3 rounded-lg hover:bg-yellow-600 transition duration-300"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-slate-50 text-white pt-5">
+      <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+        <p class="text-blue-700 font-semibold">
+          &copy; 2025 On-Blog. All rights reserved.
+        </p>
+        <div class="flex space-x-4">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-facebook m-2 fill-blue-700 hover:fill-black"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+              ></path>
+            </svg>
+          </a>
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-twitter m-2 fill-blue-700 hover:fill-black"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+              ></path>
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-instagram m-2 fill-blue-700 hover:fill-black"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+              ></path>
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-tiktok m-2 fill-blue-700 hover:fill-black"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="tailwind.config.js"></script>
+  </body>
+</html>
